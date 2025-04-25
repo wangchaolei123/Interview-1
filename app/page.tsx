@@ -77,6 +77,7 @@ export default function Home() {
       // 登录
       setIsSubmitting(true);
       await sleep(1000);
+      setIsSubmitting(false);
       // 打印1
       console.log({ mobile, code });
       const form = new FormData(e.target as HTMLFormElement);
